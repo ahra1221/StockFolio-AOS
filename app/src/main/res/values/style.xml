@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextAppearance Style -->
+    <style name="TextAppearance.StockFolio.Display1" parent="">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Headline1" parent="">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Headline2" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Subhead1" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Subhead2" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Subhead3" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Subhead4" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Body1" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Body2" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Caption1" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Caption2" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Weather1" parent="">
+        <item name="android:textSize">70sp</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+    <style name="TextAppearance.StockFolio.Weather2" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+</resources>
