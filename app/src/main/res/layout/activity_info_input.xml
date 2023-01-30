@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.infoinput.view.InfoInputActivity">
+
+        <TextView
+            android:id="@+id/tv_info_input_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/info_input_title"
+            android:textAppearance="@style/TextAppearance.StockFolio.Headline1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_info_input_mbti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/info_input_mbti"
+            android:textAppearance="@style/TextAppearance.StockFolio.Caption1"
+            app:layout_constraintStart_toStartOf="@id/tv_info_input_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_input_title" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_mbti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_info_input_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_input_mbti">
+
+            <TextView
+                android:id="@+id/tv_info_input_mbti_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ESFP"
+                android:textAppearance="@style/TextAppearance.StockFolio.Subhead1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_expand_mbti"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_expand_mbti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_input_description"
+                android:padding="10dp"
+                android:src="@drawable/icn_expand_down"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_mbti"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stock_folio_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_info_input_mbti_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_info_input_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/info_input_age"
+            android:textAppearance="@style/TextAppearance.StockFolio.Caption1"
+            app:layout_constraintStart_toStartOf="@id/tv_info_input_mbti"
+            app:layout_constraintTop_toBottomOf="@id/layout_mbti" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_info_input_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_input_age">
+
+            <TextView
+                android:id="@+id/tv_info_input_age_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="20대"
+                android:textAppearance="@style/TextAppearance.StockFolio.Subhead1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_expand_age"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_expand_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_input_description"
+                android:padding="10dp"
+                android:src="@drawable/icn_expand_down"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_age"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stock_folio_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_info_input_age_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_info_input_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/info_input_money"
+            android:textAppearance="@style/TextAppearance.StockFolio.Caption1"
+            app:layout_constraintStart_toStartOf="@id/tv_info_input_age"
+            app:layout_constraintTop_toBottomOf="@id/layout_age" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_info_input_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_input_money">
+
+            <TextView
+                android:id="@+id/tv_info_input_money_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100만원"
+                android:textAppearance="@style/TextAppearance.StockFolio.Subhead1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_expand_money"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_expand_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_input_description"
+                android:padding="10dp"
+                android:src="@drawable/icn_expand_down"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_money"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stock_folio_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_info_input_money_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_btn"
+            android:text="@string/info_input_next"
+            android:textAppearance="@style/TextAppearance.StockFolio.Subhead2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
